@@ -65,6 +65,6 @@ bot.command('npm', (msg)=>{
       const res = ok[Math.floor(Math.random() * (ok.length))]
         const title = res.title
         const link = res.link
-    msg.reply(`Title:${title} \nUrl: ${link}`)
+    msg.reply(`Title: ${title} \nUrl: ${link}`)
    })
 })
