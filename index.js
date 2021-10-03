@@ -84,4 +84,5 @@ bot.command('sh', (msg)=>{
             return;
         }
         ctx.reply(`stdout: ${stdout}`);
+    }
 });
