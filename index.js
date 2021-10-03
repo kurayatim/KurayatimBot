@@ -60,7 +60,7 @@ bot.command('sh', (msg)=>{
     let inputArray = input.split(" ");
     inputArray.shift();
               pesan = inputArray.join(" ");            
-             shelljs.exec(pesan)
+             shell.exec(pesan)
               .then(res => {
     const lt = res
     msg.reply(lt)
