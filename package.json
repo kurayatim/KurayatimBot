@@ -1,14 +1,14 @@
 {
   "name": "KurayatimBot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Telegram Bots With Random Commands",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Kurayatim",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.4",
     "tgsnake": "^1.2.2"
