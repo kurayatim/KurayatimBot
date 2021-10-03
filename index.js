@@ -63,6 +63,6 @@ bot.command('del', (ctx)=>{
 })
 
 bot.command("getMessages",async (ctx)=>{
-    let results = await ctx.telegram.getMessages(ctx.chat.id,[ctx.id]) 
+    let results = await ctx.telegram.getMessages(ctx.chat.id,ctx.id) 
     ctx.reply(results) 
 })
