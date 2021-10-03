@@ -57,7 +57,7 @@ bot.command('ly', (msg)=>{
 })
 
 bot.command('npm', (msg)=>{
-    let input = ctx.message.text
+    let input = msg.text
      let inputArray = input.split(" ")
     inputArray.shift()
     pesan = inputArray.join(" ")
@@ -65,6 +65,6 @@ bot.command('npm', (msg)=>{
       const res = ok[Math.floor(Math.random() * (ok.length))]
         const title = res.title
         const link = res.link
-    ctx.reply(`[${title}](${link})`, {parseMode: 'markdown'})
+    msg.reply(`[${title}](${link})`, {parseMode: 'markdown'})
    })
 })
