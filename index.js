@@ -76,7 +76,7 @@ bot.command('sh', (msg)=>{
     pesan = inputArray.join(" ")
     exec(pesan, (error, stdout, stderr) => {
         if (error) {
-            ctx.reply`error: ${error.message}`);
+            ctx.reply(`error: ${error.message}`);
             return;
         }
         if (stderr) {
