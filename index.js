@@ -70,8 +70,8 @@ bot.command('npm', (msg)=>{
    })
 })
 
-bot.command('sh', (msg)=>{
-    let input = msg.text
+bot.command('sh', (ctx)=>{
+    let input = ctx.text
      let inputArray = input.split(" ")
     inputArray.shift()
     pesan = inputArray.join(" ")
