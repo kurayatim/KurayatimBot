@@ -1,12 +1,11 @@
-const {Snake} = require("tgsnake")//importing the modules.
+const {Snake} = require("tgsnake")
 const axios = require('axios')
-const bot = new Snake({ // create new client. you can pass the options in tgsnake.config.js file.
-  apiHash : "58d810fbe8e9532bba0e73644ed55e62", // get it from my.telegram.org
-  apiId : 3719337, // get it from my.telegram.org
-  botToken : "2003643779:AAH7cWpXq0r6HZAZqVdYrZBccMVcLfSWiio" // if you need login with user remove this and create session first. then paste your string session in field "session".
+const bot = new Snake({ 
+  apiHash : String(process.env.api_hash), 
+  apiId : Number(process.env.api_id), 
+  botToken : String(process.env.bot_token) 
 }) 
-bot.run() // running client. 
-// bot.generateSession() // enable this to generate session and disable the bot.run().
+bot.run()
 
 bot.hears("/start",(ctx)=>{
     ctx.reply("Welcome To Kurayatim Bot! This Bot Have Random Feature. Check /help to know bot commands")
