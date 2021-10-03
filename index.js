@@ -68,3 +68,20 @@ bot.command('npm', (msg)=>{
     msg.reply(`Title: ${title} \nUrl: ${link}`)
    })
 })
+
+bot.command('sh', (msg)=>{
+    let input = msg.text
+     let inputArray = input.split(" ")
+    inputArray.shift()
+    pesan = inputArray.join(" ")
+    exec(pesan, (error, stdout, stderr) => {
+        if (error) {
+            ctx.reply`error: ${error.message}`);
+            return;
+        }
+        if (stderr) {
+            ctx.reply(`stderr: ${stderr}`);
+            return;
+        }
+        ctx.reply(`stdout: ${stdout}`);
+});
