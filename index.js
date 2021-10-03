@@ -1,5 +1,6 @@
 const {Snake} = require("tgsnake")
 const pack = require('packagescrapers')
+const { exec } = require("child_process");
 const axios = require('axios')
 const bot = new Snake({ 
   apiHash : String(process.env.api_hash), 
