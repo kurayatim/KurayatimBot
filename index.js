@@ -62,6 +62,5 @@ bot.command('sh', (msg)=>{
               pesan = inputArray.join(" ");            
     var ex = shell.exec(pesan)
     msg.reply(ex)
-            })
 })
 
