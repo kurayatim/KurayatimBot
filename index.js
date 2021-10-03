@@ -65,6 +65,6 @@ bot.command('npm', (msg)=>{
       const res = ok[Math.floor(Math.random() * (ok.length))]
         const title = res.title
         const link = res.link
-    msg.reply(`[${title}](${link})`, {parseMode: 'markdown'})
+    msg.telegram.sendMessage(`[${title}](${link})`, {parseMode: 'markdown', replyToMsgId: msg.id})
    })
 })
