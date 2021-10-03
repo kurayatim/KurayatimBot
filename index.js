@@ -55,7 +55,7 @@ bot.command('ly', (msg)=>{
             })
 })
 
-bot.commad('del', (ctx)=>{
+bot.command('del', (ctx)=>{
     //const msg = ctx.reply_to_message.text
    const msg = ctx.telegram.getMessages(ctx.chat.id, ctx.message_id)
    ctx.reply('Message Deleted!')
