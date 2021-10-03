@@ -3,10 +3,11 @@ Telegram Bots With Random Feature. Writen With Nodejs!
 
 See At Updates Channel To Know New [Updates](https://t.me/kurayatib)!
 
-[Kurayatim](https://t.me/kurayatimbot)
+Bot Link: [Kurayatim](https://t.me/kurayatimbot)
 
-After Fork Dont Forget To Star!
+After Fork Dont Forget To Star! <p> <img src="https://img.shields.io/github/stars/kurayatim/kurayatimbot.svg" /> </p>
 
 If Find Bug / Error Just Click New Issue. Or Want Contribute you can pull request
+
 
 
