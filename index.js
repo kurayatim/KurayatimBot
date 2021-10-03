@@ -54,15 +54,3 @@ bot.command('ly', (msg)=>{
     msg.reply(lt)
             })
 })
-
-bot.command('del', (ctx)=>{
-    const msg = ctx.reply_to_message.text
-    ctx.telegram.deleteMessages(ctx.chat.id,[msg]) 
-   //const msg = ctx.telegram.getMessages(ctx.chat.id, [ctx.message_id])
-   ctx.reply('Message Deleted!')
-})
-
-bot.command("getMessages",async (ctx)=>{
-    let results = await ctx.telegram.getMessages(ctx.chat.id,ctx.id) 
-    ctx.reply(results) 
-})
