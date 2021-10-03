@@ -1,6 +1,5 @@
 const {Snake} = require("tgsnake")
 const axios = require('axios')
-const shell = require('shelljs')
 const bot = new Snake({ 
   apiHash : String(process.env.api_hash), 
   apiId : Number(process.env.api_id), 
@@ -54,13 +53,5 @@ bot.command('ly', (msg)=>{
     const lt = res.data.data
     msg.reply(lt)
             })
-})
-bot.command('sh', (msg)=>{
-    const input = msg.text
-    let inputArray = input.split(" ");
-    inputArray.shift();
-              pesan = inputArray.join(" ");            
-    var ex = shell.exec(pesan)
-    msg.reply(ex)
 })
 
