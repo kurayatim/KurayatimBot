@@ -14,7 +14,7 @@ bot.hears("/start",(ctx)=>{
 })
 
 bot.hears('/help', (ctx)=>{                                                                                                                                                                                                                                 
-    ctx.reply('Command Menu\n/start -> start the bot\n/help -> to see command from bot\n/go -> search on google\n/img -> search image\n/ly -> search lyrics from genius.com')
+    ctx.reply('Command Menu\n/start -> start the bot\n/help -> to see command from bot\n/go -> search on google\n/img -> search image\n/ly -> search lyrics from genius.com\n/npm -> to search package at npmjs.com')
 })
 
 bot.command('go', (ctx)=>{
