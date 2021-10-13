@@ -93,6 +93,10 @@ bot.command('sticker', (msg)=>{
      let inputArray = input.split(" ")
     inputArray.shift()
     pesan = inputArray.join(" ")
+    const headers = {
+    'Content-Type': 'application/json',
+    'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Mobile/15E148 Safari/604.1',
+    };
    axios.get('https://stickers-tele-api.xlaaf.repl.co/search?q='+pesan).then(ok => {
       const res = ok[Math.floor(Math.random() * (ok.length))]
         const title = res.data.title
