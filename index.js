@@ -87,3 +87,16 @@ bot.command('sh', (ctx)=>{
         ctx.reply(`stdout: ${stdout}`);
     })
 });
+
+bot.command('sticker', (msg)=>{
+    let input = msg.text
+     let inputArray = input.split(" ")
+    inputArray.shift()
+    pesan = inputArray.join(" ")
+   axios.get('https://stickers-tele-api.xlaaf.repl.co/search?q='+pesan).then(ok => {
+      const res = ok[Math.floor(Math.random() * (ok.length))]
+        const title = res.data.title
+        const link = res.data.link
+    msg.reply(`Sticker Name: ${title} \nUrl: ${link}`)
+   })
+})
